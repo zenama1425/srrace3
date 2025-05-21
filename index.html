@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>슈퍼토끼 vs 거북이 경주 게임</title>
+  <style>
+    body { margin:0; display:flex; flex-direction:column; align-items:center; background:#e0f7fa; font-family:Arial, sans-serif; }
+    h1   { margin:10px; font-size:24px; color:#00695c; }
+    #timer{ font-size:32px; font-weight:bold; margin-bottom:10px; color:#d32f2f; }
+    #record{ font-size:24px; color:#ff5722; font-weight:bold; margin-bottom:10px; display:none; }
+    .canvas-wrap{ display:flex; gap:20px; }
+    canvas{ border:2px solid #00695c; background:#fff; }
+    #start{ margin-top:20px; padding:10px 20px; font-size:18px; background:#00796b; color:#fff; border:none; border-radius:5px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <h1>🐰 슈퍼토끼 vs 거북이 경주 게임 🐢</h1>
+
+  <div id="timer">00:00</div>
+  <div id="record">세계기록 달성! 🌍🏁</div>
+
+  <div class="canvas-wrap">
+    <canvas id="left"  width="400" height="600"></canvas>
+    <canvas id="right" width="400" height="600"></canvas>
+  </div>
+
+  <button id="start">게임 시작</button>
+
+  <!-- ▶ main.js 안에서 loader.js를 import하므로 type="module" -->
+  <script src="src/main.js"></script>
+</body>
+</html>
